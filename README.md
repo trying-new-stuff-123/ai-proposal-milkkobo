@@ -244,3 +244,32 @@ milkdairyniseko.com
 ---
 
 *Built as a portfolio project demonstrating end-to-end AI-assisted web development and creative production.*
+
+---
+
+## 🌏 v2 — Bilingual Update
+
+### What changed
+Converted the entire site from English-default to **Japanese-default with a JP | EN language toggle**.
+
+### Why
+A real Japanese farm website would default to Japanese. Adding bilingual support makes the site significantly more convincing and mirrors how real Hokkaido tourism and farm websites present to international visitors.
+
+### Implementation
+- All copy translated to Japanese via Lovable prompt
+- JP | EN toggle added to navigation
+- Toggle positioned **next to the logo** (not in the hamburger menu) for persistent visibility on mobile — a deliberate UX decision since mobile hamburger menus hide secondary controls
+- Proper nouns kept consistent across both languages (MILK KOBO, Mt. Yotei, Arne Abad, package names)
+
+### Key prompt insight
+Specifying toggle placement explicitly ("next to the logo, never hidden in the hamburger menu") was necessary — Lovable's default behavior puts navigation items inside the mobile menu, which would have buried the language toggle on the most likely device she'd be using.
+
+### Lovable prompt used
+```
+Translate all website copy into Japanese. Add a language toggle button "JP | EN" 
+in the top left navigation bar, positioned directly next to the MILK KOBO logo. 
+It should always be visible on both desktop and mobile — never hidden inside the 
+hamburger menu. Default language on page load is Japanese. Keep all proper nouns 
+(MILK KOBO, Mt. Yotei, MILK KOBO Full Day, Yotei Premium, Pasture Basic, Arne Abad) 
+in their original form in both languages.
+```
